@@ -1,0 +1,35 @@
+# Databricks Asset Bundle configuration for ChampionsBricks schemas
+# --------------------------------------------------------------------------------------------------
+
+resources:
+  schemas:
+    chbk_bronze:
+      name: chbk_01_bronze
+      catalog_name: workspace
+      comment: "Raw ingested data from external football APIs and social sources (immutable layer)."
+      grants:
+        - principal: ${var.job_sp}
+          privileges:
+            - "SELECT"
+            - "MODIFY"
+
+
+    chbk_silver:
+      name: chbk_02_silver
+      catalog_name: workspace
+      comment: "Cleaned, standardized football data for trusted analytical use (normalized layer)."
+      grants:
+        - principal: ${var.job_sp}
+          privileges:
+            - "SELECT"
+            - "MODIFY"
+
+    chbk_gold:
+      name: chbk_03_gold
+      catalog_name: workspace
+      comment: "Aggregated KPIs and insights for ChampionsBricks dashboards (business-ready layer)."
+      grants:
+        - principal: ${var.job_sp}
+          privileges:
+            - "SELECT"
+            - "MODIFY"

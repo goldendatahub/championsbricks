@@ -1,0 +1,117 @@
+# ===============================
+# 🧱 ChampionsBricks Git Ignore
+# ===============================
+
+# -------------------------------
+# ⚙️ Python / uv
+# -------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.uv/
+.venv/
+venv/
+.env
+.env.*
+uv.lock
+
+# -------------------------------
+# 🧪 Tests / Logs / Temp
+# -------------------------------
+*.log
+*.tmp
+*.bak
+*.swp
+*.DS_Store
+.cache/
+.pytest_cache/
+coverage.xml
+htmlcov/
+
+# -------------------------------
+# 📦 Config & Secrets
+# -------------------------------
+# Ne pas exposer de secrets API
+config/api_keys.yaml
+config/api_keys_*.yaml
+config/*.secret.yaml
+.env
+.env.local
+.env.dev
+.env.prod
+
+# -------------------------------
+# 📂 Data files
+# -------------------------------
+# Données locales non versionnées
+data/raw/
+data/output/
+data/tmp/
+data/cache/
+data/*.parquet
+data/*.csv
+
+# Autoriser des échantillons
+!data/sample/**
+
+# -------------------------------
+# 🧱 Databricks
+# -------------------------------
+# Éviter les fichiers temporaires de bundle
+databricks/asset_bundle/.bundle/
+databricks/asset_bundle/.databricks/
+databricks/asset_bundle/__pycache__/
+databricks/asset_bundle/tmp/
+databricks/notebooks/.ipynb_checkpoints/
+
+# -------------------------------
+# 🐳 Docker / VM
+# -------------------------------
+docker-compose.override.yml
+*.pid
+*.sock
+*.pid.lock
+
+# -------------------------------
+# 🧰 IDE / Editor
+# -------------------------------
+# VS Code
+.vscode/
+.settings/
+.history/
+.idea/
+*.code-workspace
+
+# -------------------------------
+# 📊 System files
+# -------------------------------
+Thumbs.db
+Desktop.ini
+
+# -------------------------------
+# 🧾 Outputs / Reports
+# -------------------------------
+*.html
+*.pdf
+*.xlsx
+reports/
+notebooks/output/
+
+# -------------------------------
+# 🧠 Documentation temporaires
+# -------------------------------
+docs/tmp/
+docs/drafts/
+
+# -------------------------------
+#  Databricks
+# -------------------------------
+.databricks/
+template_python/

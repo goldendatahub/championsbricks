@@ -1,0 +1,41 @@
+
+
+# Variables
+# --------------------------------------------------------------------------------------------------
+#variables:
+
+
+# Top-level resources definition for championsbricks
+# --------------------------------------------------------------------------------------------------
+resources:
+  jobs:
+    championsbricks_dlt_job:
+      name: championsbricks_dlt_job
+      description: This is the championsbricks DLT job.
+
+      tags:
+        business_domain: Sport
+
+      # Environment configuration
+      environments:
+        - environment_key: default
+          spec:
+            environment_version: '2'
+
+      # Tasks configuration
+      tasks:
+        - task_key: bronze_task
+          spark_python_task:
+            python_file: ../scripts/championsbricks_dlt.py
+          environment_key: default
+
+
+# Overide top-level resources settings by target
+# --------------------------------------------------------------------------------------------------
+#targets:
+#  prod:
+#    resources:
+#      jobs:
+#        championsbricks_job:
+#          tasks:
+#            - task_key: championsbricks_python_task

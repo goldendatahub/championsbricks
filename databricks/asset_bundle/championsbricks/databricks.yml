@@ -1,0 +1,66 @@
+# --------------------------------------------------------------------------------------------------
+# This is a Databricks asset bundle definition for championsbricks.
+# See https://docs.databricks.com/dev-tools/bundles/index.html for documentation.
+# --------------------------------------------------------------------------------------------------
+  bundle:
+    name: championsbricks
+
+  # Variables
+  # --------------------------------------------------------------------------------------------------
+  variables:
+    # Job service principals
+    job_sp: 
+      description: job_run_sp
+      default: 6bcc3fa7-146f-4020-9c2c-d11aad83b88c
+
+    # Git URL
+    git_url:
+      description: Git repository URL
+      default: https://github.com/goldendatahub/championsbricks
+
+  # Include
+  # --------------------------------------------------------------------------------------------------
+  include:
+    # Top-level resources
+    - resources/*.yml
+
+  # Targets
+  # --------------------------------------------------------------------------------------------------
+  targets:
+    
+    # --------------------------------------------------------------------------------------------------
+    # The 'dev' target, used for development purposes.
+    # --------------------------------------------------------------------------------------------------
+    # Whenever a developer deploys using 'dev', they get their own copy.
+    dev:
+      # We use 'mode: development' to make sure everything deployed to this target gets a prefix
+      # like '[dev my_user_name]'. Setting this mode also disables any schedules and
+      # automatic triggers for jobs and enables the 'development' mode for Delta Live Tables pipelines.
+      mode: development
+      default: true
+
+    # --------------------------------------------------------------------------------------------------
+    # The 'staging' target, used for staging deployment.
+    # --------------------------------------------------------------------------------------------------
+    staging:
+      mode: production
+      workspace:
+        root_path: /Workspace/Live/Sport/championsbricks
+      git:
+        origin_url: ${var.git_url}
+        branch: main_dev
+      run_as:
+        user_name: ${var.job_sp}
+
+    # --------------------------------------------------------------------------------------------------
+    # The 'prod' target, used for production deployment.
+    # --------------------------------------------------------------------------------------------------
+    prod:
+      mode: production
+      workspace:
+        root_path: /Workspace/Live/Sport/championsbricks
+      git:
+        origin_url: ${var.git_url}
+        branch: main_prod
+      run_as:
+        service_principal_name: ${var.job_sp}
