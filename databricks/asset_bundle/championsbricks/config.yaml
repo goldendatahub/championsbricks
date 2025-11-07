@@ -1,0 +1,25 @@
+
+# Databricks config
+# --------------------------------------------------------------------------------------------------
+databricks:
+  catalog: workspace
+  schemas:
+    bronze: dev_geoffroy_vaquette_chbk_01_bronze
+    silver: dev_geoffroy_vaquette_chbk_02_silver
+    gold: dev_geoffroy_vaquette_chbk_03_gold
+
+# Storage config
+# --------------------------------------------------------------------------------------------------
+storage:
+  github_championsbricks:
+    url_prefix: https://raw.githubusercontent.com/goldendatahub/championsbricks/refs/heads/main/data
+
+# Sources config
+# --------------------------------------------------------------------------------------------------
+sources:
+  - name: football_data_teams
+    storage_account: github_championsbricks
+    storage_path: /sample/football_teams.csv
+    format: csv
+    sep: ";"
+    target_table: d_football_data_teams

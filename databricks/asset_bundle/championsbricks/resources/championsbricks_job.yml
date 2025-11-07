@@ -26,7 +26,7 @@ resources:
       tasks:
         - task_key: bronze_task
           spark_python_task:
-            python_file: ../scripts/championsbricks_dlt.py
+            python_file: ../scripts/storage2bronze_football.py
           environment_key: default
 
 
