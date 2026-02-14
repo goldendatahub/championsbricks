@@ -1,0 +1,333 @@
+{
+  "count": 10,
+  "filters": {
+    "season": "2025",
+    "limit": 10
+  },
+  "competition": {
+    "id": 2001,
+    "name": "UEFA Champions League",
+    "code": "CL",
+    "type": "CUP",
+    "emblem": "https://crests.football-data.org/CL.png"
+  },
+  "season": {
+    "id": 2454,
+    "startDate": "2025-09-16",
+    "endDate": "2026-05-30",
+    "currentMatchday": 8,
+    "winner": null
+  },
+  "scorers": [
+    {
+      "player": {
+        "id": 3374,
+        "name": "Kylian Mbappé",
+        "firstName": "Kylian",
+        "lastName": "Mbappé",
+        "dateOfBirth": "1998-12-20",
+        "nationality": "France",
+        "section": "Centre-Forward",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2024-08-12T11:57:19Z"
+      },
+      "team": {
+        "id": 86,
+        "name": "Real Madrid CF",
+        "shortName": "Real Madrid",
+        "tla": "RMA",
+        "crest": "https://crests.football-data.org/86.png",
+        "address": "Avenida Concha Espina, 1 Madrid 28036",
+        "website": "http://www.realmadrid.com",
+        "founded": 1902,
+        "clubColors": "White / Purple",
+        "venue": "Estadio Santiago Bernabéu",
+        "lastUpdated": "2022-02-19T08:59:31Z"
+      },
+      "playedMatches": 8,
+      "goals": 13,
+      "assists": null,
+      "penalties": 3
+    },
+    {
+      "player": {
+        "id": 8004,
+        "name": "Harry Kane",
+        "firstName": "Harry",
+        "lastName": "Kane",
+        "dateOfBirth": "1993-07-28",
+        "nationality": "England",
+        "section": "Centre-Forward",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2024-08-12T11:57:09Z"
+      },
+      "team": {
+        "id": 5,
+        "name": "FC Bayern München",
+        "shortName": "Bayern",
+        "tla": "FCB",
+        "crest": "https://crests.football-data.org/5.png",
+        "address": "Säbenerstr. 51 München 81547",
+        "website": "http://www.fcbayern.de",
+        "founded": 1900,
+        "clubColors": "Red / White / Blue",
+        "venue": "Allianz Arena",
+        "lastUpdated": "2024-07-09T17:26:37Z"
+      },
+      "playedMatches": 8,
+      "goals": 8,
+      "assists": null,
+      "penalties": 2
+    },
+    {
+      "player": {
+        "id": 38101,
+        "name": "Erling Haaland",
+        "firstName": "Erling",
+        "lastName": "Haaland",
+        "dateOfBirth": "2000-07-21",
+        "nationality": "Norway",
+        "section": "Centre-Forward",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2025-04-02T09:41:03Z"
+      },
+      "team": {
+        "id": 65,
+        "name": "Manchester City FC",
+        "shortName": "Man City",
+        "tla": "MCI",
+        "crest": "https://crests.football-data.org/65.png",
+        "address": "SportCity Manchester M11 3FF",
+        "website": "https://www.mancity.com",
+        "founded": 1880,
+        "clubColors": "Sky Blue / White",
+        "venue": "Etihad Stadium",
+        "lastUpdated": "2022-02-10T19:48:37Z"
+      },
+      "playedMatches": 8,
+      "goals": 7,
+      "assists": null,
+      "penalties": 1
+    },
+    {
+      "player": {
+        "id": 61450,
+        "name": "Martinelli",
+        "firstName": "",
+        "lastName": "Gabriel Martinelli",
+        "dateOfBirth": "2001-06-18",
+        "nationality": "Brazil",
+        "section": "Left Winger",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2024-08-23T09:25:15Z"
+      },
+      "team": {
+        "id": 57,
+        "name": "Arsenal FC",
+        "shortName": "Arsenal",
+        "tla": "ARS",
+        "crest": "https://crests.football-data.org/57.png",
+        "address": "75 Drayton Park London N5 1BU",
+        "website": "http://www.arsenal.com",
+        "founded": 1886,
+        "clubColors": "Red / White",
+        "venue": "Emirates Stadium",
+        "lastUpdated": "2022-02-10T19:48:56Z"
+      },
+      "playedMatches": 7,
+      "goals": 6,
+      "assists": 1,
+      "penalties": null
+    },
+    {
+      "player": {
+        "id": 7848,
+        "name": "Anthony Gordon",
+        "firstName": "Anthony",
+        "lastName": "Gordon",
+        "dateOfBirth": "2001-02-24",
+        "nationality": "England",
+        "section": "Left Winger",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2025-04-02T09:43:10Z"
+      },
+      "team": {
+        "id": 67,
+        "name": "Newcastle United FC",
+        "shortName": "Newcastle",
+        "tla": "NEW",
+        "crest": "https://crests.football-data.org/67.png",
+        "address": "Sports Direct Arena Newcastle upon Tyne NE1 4ST",
+        "website": "http://www.nufc.co.uk",
+        "founded": 1881,
+        "clubColors": "Black / White",
+        "venue": "St. James' Park",
+        "lastUpdated": "2022-09-28T18:51:07Z"
+      },
+      "playedMatches": 8,
+      "goals": 6,
+      "assists": 2,
+      "penalties": 3
+    },
+    {
+      "player": {
+        "id": 9434,
+        "name": "Victor Osimhen",
+        "firstName": "Victor",
+        "lastName": "Osimhen",
+        "dateOfBirth": "1998-12-29",
+        "nationality": "Nigeria",
+        "section": "Centre-Forward",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2024-08-23T09:25:23Z"
+      },
+      "team": {
+        "id": 610,
+        "name": "Galatasaray SK",
+        "shortName": "Galatasaray",
+        "tla": "GAL",
+        "crest": "https://crests.football-data.org/610.png",
+        "address": "Türk Telekom Arena Stadyumu, Huzur Mahallesi, Şişli İstanbul 34415",
+        "website": "http://www.galatasaray.org",
+        "founded": 1905,
+        "clubColors": "Red / Yellow",
+        "venue": "Türk Telekom Arena",
+        "lastUpdated": "2024-10-28T10:56:27Z"
+      },
+      "playedMatches": 6,
+      "goals": 6,
+      "assists": null,
+      "penalties": 3
+    },
+    {
+      "player": {
+        "id": 3331,
+        "name": "Marcus Rashford",
+        "firstName": "Marcus",
+        "lastName": "Rashford",
+        "dateOfBirth": "1997-10-31",
+        "nationality": "England",
+        "section": "Left Winger",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2024-08-23T09:25:15Z"
+      },
+      "team": {
+        "id": 81,
+        "name": "FC Barcelona",
+        "shortName": "Barça",
+        "tla": "FCB",
+        "crest": "https://crests.football-data.org/81.png",
+        "address": "Avenida Arístides Maillol s/n Barcelona 08028",
+        "website": "http://www.fcbarcelona.com",
+        "founded": 1899,
+        "clubColors": "Red / Navy Blue / Orange",
+        "venue": "Camp Nou",
+        "lastUpdated": "2024-07-29T17:09:22Z"
+      },
+      "playedMatches": 8,
+      "goals": 5,
+      "assists": 3,
+      "penalties": null
+    },
+    {
+      "player": {
+        "id": 8076,
+        "name": "Harvey Barnes",
+        "firstName": "Harvey",
+        "lastName": "Barnes",
+        "dateOfBirth": "1997-12-09",
+        "nationality": "England",
+        "section": "Left Winger",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2025-04-02T09:43:10Z"
+      },
+      "team": {
+        "id": 67,
+        "name": "Newcastle United FC",
+        "shortName": "Newcastle",
+        "tla": "NEW",
+        "crest": "https://crests.football-data.org/67.png",
+        "address": "Sports Direct Arena Newcastle upon Tyne NE1 4ST",
+        "website": "http://www.nufc.co.uk",
+        "founded": 1881,
+        "clubColors": "Black / White",
+        "venue": "St. James' Park",
+        "lastUpdated": "2022-09-28T18:51:07Z"
+      },
+      "playedMatches": 8,
+      "goals": 5,
+      "assists": 1,
+      "penalties": null
+    },
+    {
+      "player": {
+        "id": 81565,
+        "name": "Gorka Guruzeta",
+        "firstName": "",
+        "lastName": "Guruzeta",
+        "dateOfBirth": "1996-09-12",
+        "nationality": "Spain",
+        "section": "Centre-Forward",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2024-08-12T11:57:14Z"
+      },
+      "team": {
+        "id": 77,
+        "name": "Athletic Club",
+        "shortName": "Athletic",
+        "tla": "ATH",
+        "crest": "https://crests.football-data.org/77.png",
+        "address": "Ibaigane, Alameda Mazarredo, 23 Bilbao 48009",
+        "website": "http://www.athletic-club.eus",
+        "founded": 1898,
+        "clubColors": "Red / White / Black",
+        "venue": "San Mamés",
+        "lastUpdated": "2022-03-06T09:31:27Z"
+      },
+      "playedMatches": 7,
+      "goals": 5,
+      "assists": null,
+      "penalties": null
+    },
+    {
+      "player": {
+        "id": 214533,
+        "name": "Fermín López",
+        "firstName": "",
+        "lastName": "Fermín López",
+        "dateOfBirth": "2003-05-11",
+        "nationality": "Spain",
+        "section": "Central Midfield",
+        "position": null,
+        "shirtNumber": null,
+        "lastUpdated": "2025-05-30T09:41:03Z"
+      },
+      "team": {
+        "id": 81,
+        "name": "FC Barcelona",
+        "shortName": "Barça",
+        "tla": "FCB",
+        "crest": "https://crests.football-data.org/81.png",
+        "address": "Avenida Arístides Maillol s/n Barcelona 08028",
+        "website": "http://www.fcbarcelona.com",
+        "founded": 1899,
+        "clubColors": "Red / Navy Blue / Orange",
+        "venue": "Camp Nou",
+        "lastUpdated": "2024-07-29T17:09:22Z"
+      },
+      "playedMatches": 7,
+      "goals": 5,
+      "assists": 3,
+      "penalties": null
+    }
+  ]
+}
